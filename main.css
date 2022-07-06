@@ -21,6 +21,7 @@ body {
     height: 120px;
     /* width: 33%; */
     position: relative;
+    margin: 0px 7.5px;
 }
 
 .bannerNew__coracao {
@@ -36,18 +37,24 @@ body {
 .bannerNew__logo {
     align-self: center;
     z-index: 2;
-    width: 100%;
-    max-width: 130px;
-    height: auto;
+    width: auto;
+    height: 100%;
+    max-height: 70px;
     transition: .4s;
 }
 
 .bannerNew--lab:hover .bannerNew__logo {
     transition: .4s;
-    max-width: 140px;
+    max-height: 72px;
 }
 
 .bannerNew--lab:hover .bannerNew__coracao {
     opacity: 0.16;
     transition: .8s;
+}
+
+.bannerGroup {
+    display: grid!important;
+    grid-gap: 15px;
+    grid-template-rows: 1fr 1fr;
 }
