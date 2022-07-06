@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
 body {
     max-width: 1016px;
     width: 100%;
@@ -72,4 +74,37 @@ body {
 .bannerGroup--twoRows {
     grid-gap: 15px;
     grid-template-rows: 1fr 1fr;
+}
+
+
+.bannerGroup--twoColumns {
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bannerNew--info {
+    height: 110px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    overflow: hidden;
+    padding: 20px;
+    align-items:flex-end;
+}
+
+.bannerNew--info:hover .bannerNew--info__fgImg {
+    transform: scale(1.15);
+}
+
+.bannerNew__title {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    z-index: 3;
+    margin-bottom: unset;
+}
+
+.bannerNew--info__fgImg {
+    position: absolute;
+    right: -55px;
+    top: 0px;
 }
