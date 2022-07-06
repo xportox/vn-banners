@@ -1,0 +1,46 @@
+.bannerWrapper--lab {
+    width: auto;
+    display: inline-block;
+}
+
+.bannerNew, .bannerNew--lab {
+    display: flex;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+.bannerNew--lab {
+    justify-content: center;
+    height: 120px;
+    /* width: 33%; */
+    position: relative;
+}
+
+.bannerNew__coracao {
+    opacity: 0.09;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    bottom: 0;
+    z-index: 1;
+    transition: .8s;
+}
+
+.bannerNew__logo {
+    align-self: center;
+    z-index: 2;
+    width: 100%;
+    max-width: 130px;
+    height: auto;
+    transition: .4s;
+}
+
+.bannerNew--lab:hover .bannerNew__logo {
+    transition: .4s;
+    max-width: 140px;
+}
+
+.bannerNew--lab:hover .bannerNew__coracao {
+    opacity: 0.16;
+    transition: .8s;
+}
