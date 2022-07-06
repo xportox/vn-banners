@@ -78,7 +78,7 @@ body {
 
 
 .bannerGroup--twoColumns {
-    grid-gap: 30px;
+    grid-gap: 24px;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -103,8 +103,29 @@ body {
     margin-bottom: unset;
 }
 
-.bannerNew--info__fgImg {
+.bannerNew--info__bgImg, .bannerNew--info__fgImg {
     position: absolute;
-    right: -55px;
+    right: 0px;
     top: 0px;
+}
+
+.bannerNew--info__fgImg--zoster {
+    right: -55px;
+}
+
+.bannerNew--info__fgImg--covid {
+    right: 30px;
+}
+
+@media screen and (max-width: 576px) {
+    .bannerGroup--twoColumns {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bannerGroup--twoColumns {
+        grid-gap: 15px;
+    }
 }
