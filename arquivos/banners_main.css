@@ -18,7 +18,7 @@
 
 .bannerNew--lab {
     justify-content: center;
-    height: 120px;
+    height: 140px;
     margin: 0px 7.5px;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .bannerNew--info {
-    height: 110px;
+    height: 135px;
     display: grid;
     grid-template-columns: 70% 30%;
     overflow: hidden;
@@ -91,9 +91,10 @@
 .bannerNew__title {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     z-index: 3;
     margin-bottom: unset;
+    font-weight: bold;
 }
 
 .bannerNew--info__bgImg, .bannerNew--info__fgImg {
@@ -110,6 +111,20 @@
     right: 30px;
 }
 
+.bannerSlider .slick-arrow.prev-arrow {
+    left: -56px;
+}
+
+.bannerSlider .slick-arrow.next-arrow {
+    right: -56px;
+}
+
+.bannerSlider .slick-arrow {
+    top: 50%;
+    position: absolute;
+    z-index: 40;
+}
+
 @media screen and (max-width: 576px) {
     .bannerGroup--twoColumns {
         grid-template-columns: 1fr;
@@ -120,5 +135,6 @@
 @media screen and (max-width: 768px) {
     .bannerGroup--twoColumns {
         grid-gap: 15px;
+        padding: 10px;
     }
 }
