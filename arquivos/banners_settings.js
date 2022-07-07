@@ -15,8 +15,7 @@ $(".bannerSlider").slick({
     {
       breakpoint: 1052,
       settings: {
-        slidesToShow: 3,
-        arrows: false,
+        slidesToShow: 2.5,
       },
     },
     {
