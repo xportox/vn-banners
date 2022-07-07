@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
-
 .bannerWrapper--lab {
     width: auto;
     display: inline-block;
@@ -94,6 +92,7 @@
     font-size: 24px;
     z-index: 3;
     margin-bottom: unset;
+    font-size: bold;
 }
 
 .bannerNew--info__bgImg, .bannerNew--info__fgImg {
