@@ -10,17 +10,26 @@ $(".bannerSlider").slick({
   prevArrow: setaPrev,
   nextArrow: setaNext,
   mobileFirst: false,
+  dots: true,
   responsive: [
+    {
+      breakpoint: 1052,
+      settings: {
+        slidesToShow: 3,
+        arrows: false,
+      },
+    },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1.5,
       },
     },
     {
       breakpoint: 520,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 1.3,
+        slidesToScroll: 1,
       },
     },
   ],
